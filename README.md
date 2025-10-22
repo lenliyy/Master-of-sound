@@ -1,45 +1,57 @@
 # Master of Sound
 
-一个实时音频可视化项目，能够将声音转换为动态视觉艺术。
+A real-time music visualization project that transforms live audio input into dynamic, abstract visuals. Designed for interactive demonstrations and creative performances.
 
-## 功能特点
+## Features
 
-- 实时音频输入和分析
-- 动态粒子效果可视化
-- 声音强度影响视觉效果
-- 优雅的用户界面
-- 3秒倒计时提示
+- Real-time microphone input
+- Audio analysis using energy to drive visuals
+- Pulse-style particle visualization that mimics a heartbeat
+- Click-to-start flow with a 3-second countdown
+- Lightweight, cross-platform (Windows/macOS/Linux) using Pygame and sounddevice
 
-## 依赖库
+## Dependencies
 
+Install the required Python packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+Contents of `requirements.txt`:
 - pygame
 - sounddevice
 - numpy
 - librosa
 
-## 如何运行
+## Run the visualizer
 
-1. 安装依赖：
-```bash
-pip install pygame sounddevice numpy librosa
-```
+From the project root, run:
 
-2. 运行程序：
 ```bash
 python music_visualization/music_visualizer.py
 ```
 
-## 使用说明
+## How to use
 
-1. 运行程序后，您会看到一个圆形的开始按钮
-2. 点击按钮开始3秒倒计时
-3. 倒计时结束后开始录音
-4. 说话或播放音乐，观察动态视觉效果
-5. 关闭窗口即可退出程序
+1. Run the program. A round red "Start" button appears in the center of the window.
+2. Click the circular button to begin a 3-second countdown.
+3. After the countdown, the visualizer will start listening to your microphone input.
+4. Speak or play music — particles will pulse outward from the center. Louder sounds create stronger, faster pulses.
+5. Close the window to stop the program.
 
-## 交互效果
+## Notes and tips
 
-- 声音越大，粒子扩散越快
-- 声音强度影响粒子颜色
-- 粒子从中心向外扩散
-- 类似心跳的脉冲效果
+- On macOS you may need to grant microphone permission to Python or your terminal application.
+- If you encounter audio device issues, try running with a different `samplerate` or `blocksize` in the script.
+- For better performance, run on a machine with audio hardware and avoid running heavy background processes.
+
+## License
+
+This project is released under the MIT License. See `LICENSE` for details.
+
+## Contact
+
+Repository: https://github.com/lenliyy/Master-of-sound
+
+If you'd like changes (more docs, examples, or translations), tell me what to add.
