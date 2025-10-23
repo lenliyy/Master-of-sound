@@ -1,14 +1,36 @@
 # Master of Sound
 
-A real-time music visualization project that transforms live audio input into dynamic, abstract visuals. Designed for interactive demonstrations and creative performances.
+A real-time music visualization project that transforms live audio input into dynamic, abstract visuals. Experience your music in multiple stunning visual styles!
 
-## Features
+## Features (Latest Version)
 
-- Real-time microphone input
-- Audio analysis using energy to drive visuals
-- Pulse-style particle visualization that mimics a heartbeat
-- Click-to-start flow with a 3-second countdown
-- Lightweight, cross-platform (Windows/macOS/Linux) using Pygame and sounddevice
+### New in Latest Version:
+- **Five Distinct Visual Styles:**
+  1. **Pulse Particles**: Dynamic particles pulsing with the beat
+  2. **Wave Lines**: Flowing wave lines that dance with the music
+  3. **Star Field**: Purple-white stars that twinkle and move with sound energy
+  4. **Geometric Shapes**: Rotating polygons responding to audio
+  5. **Fluid Ripples**: Liquid-like ripples that expand with sound
+
+- **Enhanced Visual Effects:**
+  - Improved star field with dynamic movement and color transitions
+  - Multi-layered glow effects for better visibility
+  - Cross-shaped light rays for stars
+  - Smooth color transitions based on sound energy
+  - Size and intensity scaling with audio input
+
+- **Interactive Controls:**
+  - Style switching buttons at the bottom of the screen
+  - Keyboard shortcuts (1-5) for quick style changes
+  - Sleek, modern UI with hover effects
+  - Real-time style switching without interruption
+
+### Original Features:
+- Real-time microphone input processing
+- Audio energy analysis
+- Smooth visual transitions
+- Cross-platform compatibility (Windows/macOS/Linux)
+- User-friendly start interface with countdown
 
 ## Dependencies
 
@@ -32,13 +54,28 @@ From the project root, run:
 python music_visualization/music_visualizer.py
 ```
 
-## How to use
+## How to Use
 
-1. Run the program. A round red "Start" button appears in the center of the window.
-2. Click the circular button to begin a 3-second countdown.
-3. After the countdown, the visualizer will start listening to your microphone input.
-4. Speak or play music — particles will pulse outward from the center. Louder sounds create stronger, faster pulses.
-5. Close the window to stop the program.
+1. Launch the program
+2. Click the red circular "Start" button in the center
+3. Wait for the 3-second countdown
+4. The visualizer will begin processing audio from your microphone
+5. Use the buttons at the bottom or number keys 1-5 to switch between visualization styles:
+   - 1: Pulse Particles
+   - 2: Wave Lines
+   - 3: Star Field (NEW: Purple-White theme)
+   - 4: Geometric Shapes
+   - 5: Fluid Ripples
+6. Close the window to exit
+
+## Tips for Best Experience
+
+- Use in a quiet environment for better audio detection
+- Try different types of music to see varied visual effects
+- Experiment with all five visualization styles
+- For Star Field effect, try music with clear beats for best visual impact
+- Allow microphone access when prompted
+- Run on a machine with decent graphics capability for smooth animations
 
 ## Notes and tips
 
